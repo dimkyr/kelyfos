@@ -34,10 +34,10 @@ public class Shortcut {
 "@ -ReferencedAssemblies 'System.Drawing.dll'
 
 
-function Edit-ShortcutTarget {
+function Edit-ShortcutArguments {
     param (
         [Parameter(Mandatory=$true)][string]$ShortcutPath,
-        [Parameter(Mandatory=$true)][string]$NewTargetPath
+        [Parameter(Mandatory=$true)][string]$NewArguments
     )
 
     if (-not (Test-Path $ShortcutPath)) {
@@ -47,10 +47,15 @@ function Edit-ShortcutTarget {
 
     $shell = New-Object -ComObject WScript.Shell
     $shortcut = $shell.CreateShortcut($ShortcutPath)
-    $shortcut.TargetPath = $NewTargetPath
+    $shortcut.Arguments = $NewArguments
     $shortcut.Save()
-    Write-Host "Shortcut target updated successfully."
+    Write-Host "Shortcut arguments updated successfully."
 }
 
 
-Edit-ShortcutTarget -ShortcutPath ".lnk" -NewTargetPath ".exe"
+
+
+
+
+Edit-ShortcutArguments -ShortcutPath ".lnk" -NewArguments "--arg1 --arg2=value"
+
