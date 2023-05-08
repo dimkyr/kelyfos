@@ -1,0 +1,56 @@
+Add-Type -TypeDefinition @"
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
+
+public class Shortcut {
+    [DllImport("shell32.dll", CharSet = CharSet.Auto)]
+    private static extern IntPtr ExtractAssociatedIcon(IntPtr hInst, StringBuilder lpIconPath, out ushort lpiIcon);
+
+    [DllImport("shell32.dll", SetLastError = true, CharSet = CharSet.Auto)]
+    private static extern uint ExtractIconEx(string szFileName, int nIconIndex, IntPtr[] phiconLarge, IntPtr[] phiconSmall, uint nIcons);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    private static extern bool DestroyIcon(IntPtr hIcon);
+
+    public static System.Drawing.Icon ExtractIcon(string filePath) {
+        StringBuilder strB = new StringBuilder(260);
+        IntPtr[] largeIcons = new IntPtr[1];
+        IntPtr[] smallIcons = new IntPtr[1];
+        strB.Append(filePath);
+        uint iconsExtracted = ExtractIconEx(strB.ToString(), 0, largeIcons, smallIcons, 1);
+        System.Drawing.Icon icon = null;
+        if (largeIcons[0] != IntPtr.Zero) {
+            icon = (System.Drawing.Icon)System.Drawing.Icon.FromHandle(largeIcons[0]).Clone();
+            DestroyIcon(largeIcons[0]);
+        }
+        if (smallIcons[0] != IntPtr.Zero) {
+            DestroyIcon(smallIcons[0]);
+        }
+        return icon;
+    }
+}
+"@ -ReferencedAssemblies 'System.Drawing.dll'
+
+
+function Edit-ShortcutTarget {
+    param (
+        [Parameter(Mandatory=$true)][string]$ShortcutPath,
+        [Parameter(Mandatory=$true)][string]$NewTargetPath
+    )
+
+    if (-not (Test-Path $ShortcutPath)) {
+        Write-Host "The specified shortcut file does not exist."
+        return
+    }
+
+    $shell = New-Object -ComObject WScript.Shell
+    $shortcut = $shell.CreateShortcut($ShortcutPath)
+    $shortcut.TargetPath = $NewTargetPath
+    $shortcut.Save()
+    Write-Host "Shortcut target updated successfully."
+}
+
+
+Edit-ShortcutTarget -ShortcutPath ".lnk" -NewTargetPath ".exe"
