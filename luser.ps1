@@ -13,3 +13,21 @@ $NameParts = $DisplayName.Split(" ")
 # Display the first and last name of the current user
 $FirstName = $NameParts[0]
 $LastName = $NameParts[1
+###############
+# Import the Active Directory module
+Import-Module ActiveDirectory
+
+# Get the current user's username
+$UserName = $env:USERNAME
+
+# Get the current user's domain
+$Domain = (Get-WmiObject -Class Win32_ComputerSystem).Domain
+
+# Retrieve the current user's Active Directory account
+$ADUser = Get-ADUser -Identity $UserName -Server $Domain -Properties GivenName, Surname
+
+# Display the first and last name of the current user
+$FirstName = $ADUser.GivenName
+$LastName = $ADUser.Surname
+Write-Host "First Name: $FirstName"
+Write-Host "Last Name: $LastName"
