@@ -4,26 +4,29 @@ $csvFilePath = "path\to\your\csvfile.csv"
 # Import the contents of the CSV file
 $csvData = Import-Csv -Path $csvFilePath
 
-# Get the number of rows and columns in the CSV file
+# Get the number of rows in the CSV file
 $rowCount = $csvData.Count
-$columnCount = $csvData[0].PSObject.Properties.Count
 
-# Initialize the two-dimensional array
-$twoDimensionalArray = New-Object 'System.String[,]'($rowCount, $columnCount)
+# Initialize the jagged array
+$jaggedArray = New-Object 'System.Collections.ArrayList'
 
-# Populate the two-dimensional array with the CSV data
+# Populate the jagged array with the CSV data
 for ($rowIndex = 0; $rowIndex -lt $rowCount; $rowIndex++) {
+    $row = New-Object 'System.Collections.ArrayList'
     $columns = $csvData[$rowIndex].PSObject.Properties
 
-    for ($columnIndex = 0; $columnIndex -lt $columnCount; $columnIndex++) {
-        $twoDimensionalArray[$rowIndex, $columnIndex] = $columns[$columnIndex].Value
+    foreach ($column in $columns) {
+        $row.Add($column.Value) | Out-Null
     }
+
+    $jaggedArray.Add($row) | Out-Null
 }
 
-# Display the contents of the two-dimensional array
-for ($rowIndex = 0; $rowIndex -lt $rowCount; $rowIndex++) {
-    for ($columnIndex = 0; $columnIndex -lt $columnCount; $columnIndex++) {
-        Write-Host -NoNewline $twoDimensionalArray[$rowIndex, $columnIndex] " "
+# Display the contents of the jagged array
+foreach ($row in $jaggedArray) {
+    $rowContent = ""
+    foreach ($column in $row) {
+        $rowContent += $column + " "
     }
-    Write-Host
+    Write-Host $rowContent
 }
