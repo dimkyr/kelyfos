@@ -18,6 +18,9 @@ Start-Sleep -Seconds 10
 if ($job.JobStateInfo.State -eq 'Running') {
     # Stop the job if it is still running
     Stop-Job -Job $job
+    
+    # Write an error message to the console
+    Write-Error "The job did not complete in the allotted time and was stopped."
 }
 
 # Always clean up the job, whether it completed or was stopped
