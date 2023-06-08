@@ -1,0 +1,299 @@
+1. HOW DO HEPA FILTERS WORK?
+A portable HEPA filter is a box with a filter and fan inside it. The
+fan pulls the air through the filter and then supplies the air back to
+the space. The filter removes particles from the air. These particles
+can include dust, allergens, smoke, mold, bacteria or respiratory
+particles that contain viruses.
+It does not remove any gasses like carbon dioxide. A more detailed
+introduction to filtration can be found here.
+2. HOW DO YOU SELECT A HEPA FILTER?
+The most important property is the clean air delivery rate (CADR).
+AHAM recommends you follow the 2/3 rule. Take the area of the space in
+square feet, and multiply it by 2/3 to get the necessary CADR in cubic
+feet per minute (CFM). So if the space is 200 sq ft, CADR = 200 2/3 =
+133 CFM. Getting one that is AHAM Verifide ensures 3rd party testing
+and reliable values.
+In a typical commercial space with 9 foot ceilings, the 2/3 rule gives
+you 4.5 air changes per hour (ACH). This is a reasonable amount that
+would likely combine with ventilation for at least 6 ACH.
+https://schools.forhealth.org/risk-reduction-strategies-for-reopening-schools/healthy-buildings/
+Be careful about some claims. For example, Austin HM400 advertises the
+fan is 400 CFM, but with the filter, the CADR (they call it True Air
+Flow Rate) is 250 CFM. By AHAM standards, that would be good for an
+area of 250 3/2 = 375 sq ft, but they use their own standard and claim
+it is sufficient for 1500 sq ft. That would give you 1.1 ACH in a
+typical commercial space with 9 foot ceilings, much lower than the 4.5
+ACH used by AHAM.
+The second important factor is noise. Here’s a rough guide as
+recommended by Clean Air Stars:
+< 40 dBA — sleep
+< 45 dbA — Classroom, Quiet Restaurant & Office
+< 50 dBA —Loud office & Childcare
+< 60 dBA — Loud restaurant or gym
+> 60 dBA — Acceptable for loud environments
+See the noise section below for how to select HEPA filters to ensure
+appropriate noise.
+The third factor is cost. More expensive ones are often worse. Typical
+ones you can find at the hardware store are likely to be more cost
+effective than high end ones.
+The final factor is additional features, which should be avoided. See
+FAQ #9.
+FAQ #17 lists resources to select HEPA filters.
+3. DO HEPA FILTERS BLOW THE VIRUS AROUND?
+It’s already being blown around. People don’t usually feel or see
+that air is moving, but you can see airborne dust reflecting in
+sunlight to get a better idea how particles can move around a room.
+The same applies for smoking — if there’s a smoker in the room,
+the smoke will travel around you will eventually be inhaling the
+smoke. Typical indoor air speeds are 0.1–0.2 m/s. Consequently, any
+indoor air pollutant is already floating around the room.
+The goal when designing ventilation systems is that the room is
+perfectly mixed — all pollutants are evenly distributed throughout
+the room. This also means that clean air is properly dispersed
+throughout the room and that when exhausting air, you will be
+extracting contaminated air instead of exhausting clean air and
+letting areas to build up with higher pollutant concentrations.
+Studies show that the well-mixed assumption is correct for small
+particle sizes.
+This is why one of the core recommendations of ASHRAE is to mix the
+air in the room and the CDC recommends the use of fans (FAQ 11 on
+their webpage). Because HEPA filters use fans, they can increase
+airflow and mixing in a room which is a good thing.
+The one caveat is that you do not want to create direct currents
+between people as anyone downwind will be placed at increased risk.
+The two options are to purchase a HEPA filter that blows up or place
+it where it is not blowing close to anyone (within 2 m or 6 ft).
+4. DO HEPA FILTERS MAKE THE VIRUS TRAVEL FURTHER?
+No. The virus will travel around the room with or without a HEPA
+fitler or fan. What the HEPA filter or fan will do is make it mix into
+the room at a quicker rate. This will help mitigate the risk of
+short-range transmission (see FAQ #13) and will help ensure clean air
+is better distributed throughout the room.
+When placing a HEPA filter, ensure you are not creating direct
+currents between two people as the person downwind will be at
+increased risk.
+5. DO HEPA FILTERS INTERFERE WITH VENTILATION?
+No. The vast majority of systems are are mixing ventilation. The goal
+is to have the air in the room properly mixed. HEPA filters would
+further increase the mixing of the air which would ensure pollutants
+are properly removed from the room.
+There are rarely used ventilation systems which are called
+stratification ventilation or displacement ventilation where cool air
+is supplied near the floor and it slowly warms up, rises and is
+extracted at the ceiling. The goal is to have a constant upwards
+current in the room. A HEPA filter would be detrimental in that case
+since the goal is not to have horizontal flow of air. These systems
+are not common.
+Mixing ventilation on the left side where air is supplied and
+exhausted at the ceiling. Displacement ventilation on the right side
+where cool air is supplied near the floor and it is exhausted at the
+ceiling.
+Although it is possible that in very rare circumstances, using a HEPA
+filter can overall have a worse effect, the vast majority of cases
+(>99%), it will improve the clean air delivery rate and improve the
+air mixing in the space.
+6. DOES UV LIGHT HELP WHEN COMBINED WITH A HEPA FILTER?
+Not really. To be rated a HEPA filter, it needs to remove more than
+99.95% of particles. Even if the UV light successfully disinfects the
+remaining 0.05%, the effect on the clean air delivery rate would be
+negligible. Some UV devices are not properly designed and the UV light
+would not deliver a sufficient dose to inactivate pathogens. While
+there are portable air cleaners that exclusively use UV light to
+disinfect the air and are effective, the effect of combining HEPA
+filtration with UV light is unlikely to provide any meaningful
+benefit.
+7. DO I NEED TO WORRY ABOUT GETTING COVID FROM VIRUSES COMING OFF A
+HEPA FILTER?
+No. This effect is known as resuspension. Virus particles are
+initially floating in the air and then deposit on the filter when
+pulled through. They can then become concentrated on the filter. If
+the filter is then disturbed, the virus particles can get resuspended
+and infect anyone nearby.
+There is currently no evidence that this is a significant risk.
+Furthermore, virus particles decay over time, so if the filter has
+trapped virus particles, unless it was in the very recent past, it is
+unlikely to be able to cause infection. A much more significant risk
+would be to share a room with an infectious person without appropriate
+mitigation measures in place, like portable air cleaners.
+When changing filters, it is good practice to wear a respirator and do
+it in a well ventilated environment as dust can become resuspended
+which can have harmful effects when inhaled.
+8. SHOULD I GET A MEDICAL GRADE HEPA FILTER, TRUE HEPA OR H14?
+Medical grade HEPA and True HEPA are just other names for HEPA filters
+rated H13. This is the standard rating for HEPA filters, so medical
+grade HEPA or True HEPA are just marketing names.
+There are H14 HEPA filters which can filter 99.995% of particles
+instead of just 99.95%. This benefit is negligible in all normal
+situations, but might be relevant in certain laboratories. There is no
+need for general use of H14.
+More information about HEPA filter ratings can be found here.
+9. SHOULD I GET ONE WITH ADDITIONAL FEATURES LIKE IONIZATION, PLASMA,
+NCCO, PCO, HYDROXYLATION?
+No. Portable air cleaners often come with additional features. These
+involve some mechanism to supply reactive species to the space. The
+goal is they will interact with virus particles and cause them to
+inactivate or deposit on surfaces or filters.
+Many of these technologies have poor evidence of effectiveness. Even
+claims of 99.999% reduction can still mean that HEPA filters are more
+than 10x more effective.
+There is also evidence that many of these technologies can produce
+indoor air pollutants like formaldehyde and ozone. See this article
+for an in-depth review.
+The CDC recommends caution with these technologies. The Ontario
+Society or Professional Engineers recommends these technologies are
+not used until there is a standard for safety and effectiveness.
+OSPE IAQ core recommendation to not use additive air cleaning
+technologies until there is a standardized way to ensure their safety
+and effectiveness.
+10. WHAT ARE THE MAIN PROBLEMS WITH HEPA FILTERS?
+The three main problems with HEPA filters are noise, distribution and
+human operation.
+See FAQ #11 to address noise.
+There is a concern with short-circuiting — that clean air supplied
+directly returns to the intake of the HEPA filter and does not mix
+within the space. Proper air distribution can prevent
+short-circuiting. To achieve proper distribution, some of the
+following strategies can help:
+     multiple HEPA filters can be spread out throughout the space
+     they can be combined with fans that distribute the air better
+     they should be placed properly. See FAQ#11
+Having portable air cleaners in a space requires people to turn them
+on and off. To ensure this is being done properly, the portable air
+cleaner needs to be selected to be noise appropriate for the space.
+This needs to be combined with proper training, signage and
+verification policies to ensure they are running properly.
+11. HOW DO YOU ADDRESS NOISE?
+The easiest way to address noise is to purchase multiple HEPA filters
+and run them on low. They still need to be sized properly for the
+space. More details can be found here.
+Another alternative is to use a portable air cleaner with PC fans and
+either DIY it or purchase it from Clean Air Kits.
+12. WHERE SHOULD IT BE PLACED?
+It’s impossible to know the perfect place to put it without a
+computational fluid dynamics model or fog experiments, but they are
+still very effective, even if not in the ideal place. Here are some
+placement guidelines:
+     Best to have one that blows air up
+     If blowing sideways, best not to aim it at anyone.
+     If it’s in the direction of someone, keep at least 2m (6 ft) away
+     Centre of the room is best
+     Don’t blow into a wall or object
+     Raised is better than on the floor
+     Give at least 0.5 m (1.5’) clearance from walls or objects that
+could restrict flow
+     Keep away from other sources of clean air: open windows, supply air
+vents, other HEPA filters
+     If you have multiple, space them out.
+     Make sure there’s no obstruction to where the air is going (like
+under a table)
+     In classrooms, there’s usually plenty of room at the front.
+     Sometimes it’s better to move it a bit away from people if it
+allows you to run it on a higher speed because of noise
+13. ARE HEPA FILTERS USELESS AGAINST SHORT-RANGE TRANSMISSION?
+No. Short range transmission is higher risk because the virus is more
+concentrated in the initial exhaled plume by the infectious person. To
+mitigate short-range transmission, this plume needs to be diluted
+quickly. In order to accomplish this, two things are required: clean
+air in the space and good airflow in the space. Good airflow will
+dilute the initial plume quickly and it should be replaced by clean
+air in the space.
+A HEPA filter can assist on both of these measures. It will ensure the
+virus concentration in the space will be lower. Because it uses a fan,
+it will improve airflow throughout the space. Depending on the size of
+the space and the HEPA filter, this effect might be small, but it can
+still help.
+Overall air quality improvements help mitigate short range
+transmission.
+https://onlinelibrary.wiley.com/doi/epdf/10.1111/ina.12946
+14. I HEARD IT DOESN’T WORK ON VIRUSES BECAUSE IT ONLY WORKS ON
+PARTICLES DOWN TO 0.3 ΜM AND VIRUSES ARE SMALLER THAN THAT.
+There are different physical mechanisms which allow filters to trap
+particles. The different mechanisms work best on different particle
+sizes.
+The combination of these mechanisms is worst at 0.3 µm. Filtration is
+more effective on particles with both larger and smaller diameter.
+Because of this, HEPA filters are tested on particles 0.3 µm in
+diameter.
+Filtration efficiency of different filters based on particle diameter.
+The left graph shows the efficiency of various MERV rated filters. The
+right graph shows a HEPA rated filter.
+https://www.ashrae.org/technical-resources/filtration-disinfection
+In summary, HEPA filters do a better job against particles below 0.3
+µm. The misconception that they don’t work below 0.3 µm is because
+they perform worst on particles that are 0.3 µm, so that is the size
+they are tested on.
+15. IS IT DANGEROUS TO SIT NEAR A HEPA FILTER BECAUSE IT WILL DRAW THE
+VIRUS NEAR YOU?
+No. In general, the air in the room should be assumed to be well-mixed
+and the air that is being brought in to the HEPA filter is the same as
+the air you would be breathing if you were in the middle of the room.
+However, short-circuiting is an established problem with air cleaning
+equipment that does not have proper distribution built in, like HEPA
+filters. Short-circuiting occurs when clean air supplied from the HEPA
+filter does not properly mix into the space, but instead circulates
+back to the return. This would mean that air near the HEPA filter is
+cleaner than the average air in the room and it would be lower risk to
+be adjacent to a HEPA filter.
+16. “WE HAVE MECHANICAL VENTILATION, SO WE DON’T NEED A HEPA
+FILTER”
+If a room has mechanical ventilation, it does not mean there is an
+appropriate level of clean air supplied. Mechanical ventilation can
+have various issues:
+     Current standards are not designed for airborne disease mitigation,
+only comfort. ASHRAE is currently developing a standard for airborne
+disease mitigation because its existing air quality standard does not
+address that. ASHRAE is used in building codes in North America.
+     Older buildings were not designed to comply with modern minimum
+requirements. Even with mechanical ventilation, they often have very
+poor ventilation levels.
+     Having mechanical ventilation does not mean it is operating
+properly.
+Consequently, to provide appropriate risk, there are two things
+facilities should do. First, select an airborne mitigation standard
+and comply with it. Examples of standards are 6 air changes per hour
+(OSPE, Lancet, Harvard Healthy Buildings) or 10 litres/sec/person
+(WHO).
+Second, there should be ongoing verification that the systems are
+operating as designed. The best way to do this is by monitoring
+ventilation with CO2.
+If facilities are complying with an airborne disease mitigation
+standard and verifying proper operation, then it is reasonable for
+them to state that they have provided a reasonably low risk
+environment and do not want to add portable air cleaners to their
+strategy.
+If there is no compliance to a standard for airborne disease
+mitigation, HEPA filters can assist in achieving those goals. If there
+is no verification, HEPA filters can provide an additional layer of
+protection if the systems are not running properly.
+17. WHAT GOOD RESOURCES ARE THERE TO PICK HEPA FILTERS?
+Some good resources are:
+     Clean Air Stars
+     Clean Air Crew
+     Comparison of HEPA filters by Marwa Zaatari
+18. DO PERSONAL HEPA FILTERS WORK?
+In general, not really. There are two ways to use personal HEPA
+filters: a small HEPA filter in a large room that is close to you or
+having one blowing in your face.
+If a small HEPA filter is used in a large room, the air close to it
+might be slightly cleaner than the rest of the room, but unlikely to
+be very meaningful.
+If you are pointing one at your face, it depends on the filter and how
+close it is. This is data that was taken by Clean Air Stars using the
+QT3.
+To get a meaningful reduction, the distance needs to be within 40 cm
+of your face. That is very close and not sustainable for a long period
+of time. They ran another test with a DIY PC fan array which showed
+much better results.
+This one has over 80% particle reduction at 1.5 m away. A much more
+reasonable distance. It is likely that this option is better because
+the fan array gives it a much larger area. This is a legitimate option
+as opposed to most HEPA filters which supply air from a relatively
+smaller area with higher air speed.
+This deals with a more general issue — when clean air is supplied
+from a point, how far will it travel before the clean air becomes well
+mixed with the surrounding air. One example which has good data is the
+gasper or personal air outlet found in airplanes. Does it work to use
+it like a personal HEPA filter and aim it at your face? This is what
+the ASHRAE epidemic task force has to say about it:
+In summary, clean air mixes into the space pretty quickly. Using it
+might help a bit but not significantly.
